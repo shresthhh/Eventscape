@@ -1,25 +1,26 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 body{
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 ;
+    padding: 0 ;
     font-family: Nunito;
 }
 .navbar{
     width: 100%;
     background-color: #FF6E6E !important;
-    padding-top: 20px;
+    padding-top: 2rem;
     position: absolute;
     z-index: 10;
 }
 .navbar-brand, .nav-link{
-    color: #fff !important;
+    color: #fff ;
     font-size: 22px;
 }
 .nav-item{
-    margin: 0 20px;
+    margin: 0 2rem;
 }
 .navbar-toggler{
     border: none;
@@ -28,7 +29,7 @@ body{
     outline: none;
 }
 .fa-bars{
-    color: #e7e7e7 !important;
+    color: #e7e7e7 ;
 }
 .carousel{
     position: relative;
@@ -39,7 +40,7 @@ body{
     position: absolute;
     left: 13%;
     top: 18%;
-    padding: 10px;
+    padding: 1rem;
 }
 .carousel-item{
     width: 100%;
@@ -54,38 +55,41 @@ body{
 }
 .search-box{
     background-color: transparent;
-    width: 240px;
-    height: 40px;
+    width: 45rem;
+    height: 4rem;
     text-align: center;
-    padding-top: 7px;
-    border: 1px solid white;
-    border-radius: 20px;
+    padding-top: 0.7rem;
+    border: 0.1rem solid white;
+    /* border-radius: 2rem; */
+    font-size: 1.5rem;
 }
 #search-event{
     background-color: transparent;
     outline: none;
     border: none;
 }
+
 #search-event:focus{
     background-color: transparent;
 }
+
 #search-event::placeholder{
     color: #fff;
     opacity: 0.7;
 }
 .fa-search{
-    color: #fff !important;
+    color: #fff ;
 }
 .events{
     padding-top: 0;
 }
 .events-heading{
-    font-size: 40px !important;
-    color: #302f2f !important;
+    font-size: 4rem;
+    color: #302f2f ;
 }
 .events-icon{
-    color: #FF7070 !important;
-    font-size: 80px !important;
+    color: #FF7070 ;
+    font-size: 8rem ;
 }
 .ui.menu.three{
     border: none;
@@ -94,16 +98,16 @@ body{
 }
 .ui.menu .event-item{
     color: #adadad;
-    border-radius: 20px;
+    border-radius: 2rem;
     margin: 0 auto;
-    width: 240px;
+    width: 24rem;
     cursor: pointer;
     font-weight: 700;
-    font-size: 34px;
+    font-size: 3.4rem;
     text-align: center;
 }
 .ui.menu .event-item:hover{
-    background-color: #ffffff !important;
+    background-color: #ffffff ;
 }
 .ui.menu .event-item:before{
     height: 0;
@@ -112,15 +116,15 @@ body{
     margin-top: 10%;
 }
 .event-item.active{
-    color: #302f2f !important;
+    color: #302f2f ;
     position: relative;
 }
 .event-item.active::after{
     content: '';
     position: absolute;
     width: 25%;
-    height: 8px;
-    margin-bottom: -10px;
+    height: 0.8rem;
+    margin-bottom: -1rem;
     background-color: #FF6E6E;
     bottom: 0;
     left: 35%;
@@ -128,6 +132,47 @@ body{
 .no-line-break{
     white-space: nowrap;
 }
+
+/* card */
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    /* height: 50rem; */
+    
+}
+    .card__side{
+        
+        color: white;
+        font-size: 2rem;
+        
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 1s ease;
+        backface-visibility: hidden;
+    }
+
+    .card__side--front{
+        background-color:rgb(211, 211, 211);
+    }
+
+    .card__side--back{
+        background-image: linear-gradient(to right bottom,#FF6E6E, rgb(252, 72, 72));
+        /* position: absolute; */
+        transform: rotateY(180deg);
+    }
+    .card:hover .card__side--front {
+        transform: rotateY(180deg);
+    }
+    .card:hover .card__side--back {
+        transform: rotateY(0);
+    }
+
+
+
 @media(max-width: 1200px){
     .nav-item{
         text-align: center;
@@ -138,7 +183,7 @@ body{
 }
 @media(max-width: 990px){
     .ui.menu .event-item{
-        font-size: 30px;
+        font-size: 3rem;
     }
 }
 @media(max-width: 770px){
@@ -146,7 +191,7 @@ body{
         margin-top: 10%;
     }
     .ui.menu .event-item{
-        font-size: 26px;
+        font-size: 2.6rem;
     }
     .event-item.active::after{
         margin-bottom: 0;
@@ -154,6 +199,6 @@ body{
 }
 @media(max-width: 600px){
     .ui.menu .event-item{
-        font-size: 23px;
+        font-size: 2.3rem;
     }
 }
