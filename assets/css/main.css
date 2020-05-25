@@ -136,7 +136,7 @@ body{
 }
 
 /* card */
-.card{
+.card__main{
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -166,10 +166,10 @@ body{
         /* position: absolute; */
         transform: rotateY(180deg);
     }
-    .card:hover .card__side--front {
+    .card__main:hover .card__side--front {
         transform: rotateY(180deg);
     }
-    .card:hover .card__side--back {
+    .card__main:hover .card__side--back {
         transform: rotateY(0);
     }
 
