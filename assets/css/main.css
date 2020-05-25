@@ -140,8 +140,8 @@ body{
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem; 
-    
+    height: 50rem;
+       
 }
     .card__side{
         color: white;
@@ -155,6 +155,7 @@ body{
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 5rem rgba(black, .15);
+        
     }
 
     .card__side--front{
@@ -164,13 +165,21 @@ body{
     .card__side--back{
         background-image: linear-gradient(to right bottom, #ff6e6e, #ff92b0, #fbbae0, #f4dff9, #ffffff);
         /* position: absolute; */
-        transform: rotateY(-180deg);
+        transform: rotateY(180deg);
     }
     .card__main:hover .card__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
     .card__main:hover .card__side--back {
         transform: rotateY(0);
+    }
+
+    .card__picture{
+        background-size: cover;
+        background-image: url(../imgs/event2.jpeg); 
+        max-width: 100%;
+        height: 50rem;
+        object-fit: contain;
     }
 
 
