@@ -11,17 +11,17 @@ body{
 .navbar{
     width: 100%;
     background-color: #FF6E6E !important;
-    padding-top: 2rem;
+    padding: 1% 5%;
+    padding-top: 1.5%;
     position: absolute;
     z-index: 10;
 }
 .navbar-brand, .nav-link{
-    color: #fff ;
+    color: #fff !important;
     font-size: 22px;
 }
 .nav-item{
     margin: 0 2rem;
-    text-transform: uppercase;
 }
 .navbar-toggler{
     border: none;
@@ -57,12 +57,12 @@ body{
 
 .search-box{
     background-color: transparent;
-    width: 45rem;
+    width: 25rem;
     height: 4rem;
     text-align: center;
     padding-top: 0.7rem;
     border: 0.1rem solid white;
-    /* border-radius: 2rem; */
+    border-radius: 2rem;
     font-size: 1.5rem;
 }
 #search-event{
@@ -86,8 +86,8 @@ body{
     padding-top: 0;
 }
 .events-heading{
-    font-size: 4rem;
-    color: #302f2f ;
+    font-size: 3.5rem !important;
+    color: #302f2f;
 }
 .events-icon{
     color: #FF7070 ;
@@ -141,7 +141,6 @@ body{
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
-       
 }
     .card__side{
         color: white;
@@ -196,6 +195,9 @@ body{
     .ui.menu .event-item{
         font-size: 3rem;
     }
+    .card__main{
+        margin-top: 3.5rem;
+    }
 }
 @media(max-width: 770px){
     .ui.menu.three{
@@ -204,12 +206,14 @@ body{
     .ui.menu .event-item{
         font-size: 2.6rem;
     }
-    .event-item.active::after{
-        margin-bottom: 0;
-    }
 }
 @media(max-width: 600px){
     .ui.menu .event-item{
         font-size: 2.3rem;
+    }
+    .card__main{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 4rem;
     }
 }
