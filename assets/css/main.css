@@ -21,6 +21,7 @@ body{
 }
 .nav-item{
     margin: 0 2rem;
+    text-transform: uppercase;
 }
 .navbar-toggler{
     border: none;
@@ -53,6 +54,7 @@ body{
     text-align: center;
     color: honeydew;
 }
+
 .search-box{
     background-color: transparent;
     width: 45rem;
@@ -116,7 +118,7 @@ body{
     margin-top: 10%;
 }
 .event-item.active{
-    color: #302f2f ;
+    color: #302f2f !important;
     position: relative;
 }
 .event-item.active::after{
