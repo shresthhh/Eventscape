@@ -21,6 +21,16 @@ $(".faq-q-tab").on('click',function(){
 	$('.fa-angle-down',this).toggleClass('hide');
 });
 
+$(".navigation__button").on('click',function(){
+    var str=0;
+    $("nav").toggleClass("navigation__nav--active");
+    $(".navigation__background").toggleClass("navigation__background--active");
+    $(".navigation__icon").toggleClass("navigation__icon--active");
+    document.styleSheets[0].addRule(".navigation__icon::before", "top: 0 !important; transform: rotate(135deg);", 4);
+    document.styleSheets[0].addRule(".navigation__icon::after", "top: 0 !important; transform: rotate(-135deg);", 4);  
+});
+
+
 timeout = null;
 function typeWriter(target, textList, placeholder = false, i = 0, textList_i = 0, delay = 250) {
     if (!i) {
