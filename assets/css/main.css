@@ -7,6 +7,7 @@ body{
     margin: 0 ;
     padding: 0 ;
     font-family: Nunito;
+    background-color: #201F1F;
 }
 .navbar{
     width: 100%;
@@ -90,6 +91,7 @@ body{
     border: none;
     margin-top: 5%;
     box-shadow: none;
+    background-color: #201F1F;
 }
 .ui.menu .event-item{
     color: #adadad;
@@ -102,7 +104,7 @@ body{
     text-align: center;
 }
 .ui.menu .event-item:hover{
-    background-color: #ffffff ;
+    background-color: #201F1F;
 }
 .ui.menu .event-item:before{
     height: 0;
@@ -130,6 +132,9 @@ body{
 }
 .hide{
     display: none;
+}
+.osc{
+    animation: osc 2s infinite ease-in-out;
 }
 /* Card */
 .card__main{
@@ -223,7 +228,7 @@ body{
 .card-btn:hover span:after {
     opacity: 1;
 }
-/* FAQ's */
+/* FAQ */
 #faq{
     display: flex;
     justify-content: center;
@@ -234,7 +239,6 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFFFF;
     width: 1000px;
     border-radius: 10px;
     padding: 2rem 3rem;
@@ -243,23 +247,26 @@ body{
 .toggle-icon{
     float: right;
     color: #ff6f6f;
+    font-size: 3rem;
 }
 .faq-q-tab{
     width: 100%;
     margin: 2% 0;
     padding: 1%;
-    background-color: #f8f8f8;
+    border: 2px solid #4e4d4d;
+    border-radius: 5px;
 }
 .faq-header{
-    color: #302f2f;
+    color: #ff6f6f;
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 .question{
     padding: 10px 15px;
 	margin:0;
 	font-weight: normal;
     font-size: 1.75rem;
+    color: #FAFAFA;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -268,7 +275,16 @@ body{
     padding-left: 1.5%;
 	font-weight: 300;
     font-size: 1.5rem;
-    opacity: 0.6;
+    color: #FAFAFA;
+    opacity: 0.5;
+}
+@keyframes osc {
+    0%, 100% {
+        padding-top: 0;
+    }
+    50% {
+        padding-top: 5px;
+    }
 }
 /* Media Queries */
 @media(max-width: 1200px){
