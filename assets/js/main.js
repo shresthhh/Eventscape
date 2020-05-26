@@ -11,6 +11,12 @@ $(".event-item").on('click', function(){
     $(this).siblings().removeClass("active");
 });
 
+$(".faq-q-tab").on('click',function(){
+	$(this).children('.faq-a-tab').slideToggle();
+	$('.fa-angle-up',this).toggleClass('hide');
+	$('.fa-angle-down',this).toggleClass('hide');
+});
+
 timeout = null;
 function typeWriter(target, textList, placeholder = false, i = 0, textList_i = 0, delay = 250) {
     if (!i) {
