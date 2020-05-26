@@ -17,7 +17,7 @@ body{
 }
 .navbar-brand, .nav-link{
     color: #fff !important;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 .nav-item{
     margin: 0 2rem;
@@ -68,11 +68,6 @@ body{
     outline: none;
     border: none;
 }
-
-#search-event:focus{
-    background-color: transparent;
-}
-
 #search-event::placeholder{
     color: #fff;
     opacity: 0.7;
@@ -142,6 +137,7 @@ body{
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
+    cursor: pointer;
 }
 .card__side{
     color: white;
@@ -161,9 +157,11 @@ body{
     background-color:rgb(211, 211, 211);
 }
 .card__side--back{
-    background-image: linear-gradient(to right bottom, #ff6e6e, #ff92b0, #fbbae0, #f4dff9, #ffffff);
+    /* background-image: linear-gradient(to right bottom, #ff6e6e, #ff92b0, #fbbae0, #f4dff9, #ffffff); */
     /* position: absolute; */
+    background-color: #ff6f6f;
     transform: rotateY(180deg);
+    position: relative;
 }
 .card__main:hover .card__side--front {
     transform: rotateY(-180deg);
@@ -178,11 +176,58 @@ body{
     height: 50rem;
     object-fit: contain;
 }
+.card-details{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -7.5rem;
+    margin-top: -4rem;
+}
+.card-btn{
+    display: block;
+    margin-top: 5%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 150px;
+    height: 30px;
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.card-btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+    padding-right: 10px;
+}
+.card-btn:focus{
+    outline: none;
+}
+.card-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 20;
+    right: 0;
+    transition: 0.5s;
+}
+.card-btn:hover span {
+    padding-right: 20px;
+    color: white;
+}
+.card-btn:hover span:after {
+    opacity: 1;
+}
 /* FAQ's */
 #faq{
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 .faq-main{
     display: flex;
