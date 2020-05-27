@@ -11,10 +11,6 @@ $(".event-item").on('click', function(){
     $(this).siblings().removeClass("active");
 });
 
-$(".faq-q-tab").hover(function(){
-	$('.fa-angle-down',this).toggleClass('osc');
-});
-
 $(".faq-q-tab").on('click',function(){
 	$(this).children('.faq-a-tab').slideToggle();
 	$('.fa-angle-up',this).toggleClass('hide');
