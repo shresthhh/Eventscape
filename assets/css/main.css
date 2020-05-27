@@ -252,15 +252,15 @@ body{
     text-align: center;
     display: inline-block;
 }
-/* .ui.menu .event-item:hover{
+.ui.menu .event-item:hover{
     background-color: #201F1F;
-} */
-/* .ui.menu .event-item:before{
+}
+.ui.menu .event-item:before{
     height: 0;
-} */
-/* .event-row{
+}
+.event-row{
     margin-top: 10%;
-} */
+}
 .sections > p.active{
     color: #fff !important;
     opacity: 0.7 !important;
