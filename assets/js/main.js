@@ -22,12 +22,14 @@ $(".faq-q-tab").on('click',function(){
 });
 
 $(".navigation__button").on('click',function(){
-    var str=0;
     $("nav").toggleClass("navigation__nav--active");
     $(".navigation__background").toggleClass("navigation__background--active");
-    $(".navigation__icon").toggleClass("navigation__icon--active");
-    document.styleSheets[0].addRule(".navigation__icon::before", "top: 0 !important; transform: rotate(135deg);", 4);
-    document.styleSheets[0].addRule(".navigation__icon::after", "top: 0 !important; transform: rotate(-135deg);", 4);  
+
+    //hamburger and forming cross code is below 
+    
+    // $(".navigation__icon").toggleClass("navigation__icon--active");
+    // document.styleSheets[0].addRule(".navigation__icon::before", "top: 0 !important; transform: rotate(135deg);", 4);
+    // document.styleSheets[0].addRule(".navigation__icon::after", "top: 0 !important; transform: rotate(-135deg);", 4);  
 });
 
 

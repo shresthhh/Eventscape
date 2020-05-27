@@ -23,7 +23,8 @@ body{
 
 /*------------------------- NAVBAR ----------------------------------*/
 .navbar{
-    position: relative;
+    
+    padding-top: 5rem;
 }
 
  
@@ -130,9 +131,9 @@ body{
         width: 100%;
     }
 
-    .navigation__icon--active{
+    /* .navigation__icon--active{
         background-color: transparent;
-    }
+    } */
 
 
 
