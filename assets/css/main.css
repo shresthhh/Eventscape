@@ -10,18 +10,6 @@ body{
     font-family: Nunito;
     background-color: #201F1F;
 }
-
-.navbar{
-    width: 100%;
-    background-color: black !important;
-    padding: 1.5% 5%;
-    position: absolute;
-    z-index: 10;
-}
-.nav-item{
-    margin: 0 2rem;
-}
-
 /*------------------------- NAVBAR ----------------------------------*/
 .main-navbar{
     position: fixed;
@@ -43,7 +31,7 @@ body{
     top: 0;
     left: 0;
     position: absolute;   
-    
+    margin-left: 1%;
 }
   
   .navigation__background {
@@ -344,7 +332,6 @@ top: 1rem;
 .hide{
     display: none;
 }
-/* Card */
 .osc{
     animation: osc 2s infinite ease-in-out;
 }
@@ -400,6 +387,9 @@ top: 1rem;
     top: 50%;
     margin-left: -7.5rem;
     margin-top: -4rem;
+}
+.card-details h4{
+    color: #fff;
 }
 .card-btn{
     display: block;
