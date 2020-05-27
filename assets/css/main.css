@@ -7,7 +7,7 @@ body{
     margin: 0 ;
     margin-top: 100px;
     padding: 0 ;
-    font-family: Nunito;
+    font-family: 'Lato', sans-serif;
     background-color: #201F1F;
 }
 /*------------------------- NAVBAR ----------------------------------*/
@@ -146,88 +146,14 @@ body{
         background-color: transparent;
     }
 
-.navigation__nav {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1500;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
-.navigation__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-  width: 100%; }
+    .main-navbar.scrolled{
+      box-shadow: 0px 0px 5px rgb(255, 110, 110);
+      transition: box-shadow linear 500ms;
+    }
 
-.navigation__item {
-  margin: 1rem; }
+/* -----------------------Carousel------------------------ */
 
-.navigation__link:link, .navigation__link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: #FF7070;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 250%;
-  transition: all .4s; 
-}
-.navigation__link:link span, .navigation__link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block; 
-}
-.navigation__link:hover, .navigation__link:active {
-  background-position: 100%;
-  color: #FF7070;
-  transform: translateX(1rem);
-}
-.navigation__icon {
-  position: relative;
-  margin-top: 3.5rem; 
-}
-.navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 3rem;
-  height: 2px;
-  background-color: #FF7070;
-  display: inline-block;
-  transition: all .2s; 
-}
-.navigation__icon::before, .navigation__icon::after {
-  content: "";
-  position: absolute;
-  left: 0; 
-}
-.navigation__icon::before {
-  top: -0.8rem; 
-}
-.navigation__icon::after {
-  top: 0.8rem; 
-}
-.navigation__button:hover .navigation__icon::before {
-top: -1rem; 
-}
-.navigation__button:hover .navigation__icon::after {
-top: 1rem; 
-}
-.navigation__background--active{
-    visibility: visible;
-    transform: scale(80);
-}
-.navigation__nav--active{
-    opacity: 1;
-    width: 100%;
-}
-.navigation__icon--active{
-    background-color: transparent;
-}
 .carousel{
     position: relative;
 }
@@ -272,6 +198,10 @@ top: 1rem;
 .fa-search{
     color: #fff ;
 }
+
+
+/* ---------Events----------- */
+
 .events{
     padding-top: 5%;
 }
@@ -284,47 +214,74 @@ top: 1rem;
     color: #FF7070 ;
     font-size: 8rem;
 }
-.ui.menu.three{
+/* .ui.menu.three{
     border: none;
     margin-top: 5%;
     box-shadow: none;
     background-color: #201F1F;
+} */
+.sections{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.ui.menu .event-item{
+
+.sections > p{
     color: #bbbbbb;
     opacity: 0.5;
-    border-radius: 2rem;
-    margin: 0 auto;
-    width: 24rem;
+    /* border-radius: 2rem; */
+    /* margin: 0 auto; */
+    /* width: 24rem; */
     cursor: pointer;
     font-weight: 700;
     font-size: 3.2rem;
     text-align: center;
+    display: inline-block;
 }
-.ui.menu .event-item:hover{
+/* .ui.menu .event-item:hover{
     background-color: #201F1F;
-}
-.ui.menu .event-item:before{
+} */
+/* .ui.menu .event-item:before{
     height: 0;
-}
-.event-row{
+} */
+/* .event-row{
     margin-top: 10%;
-}
-.event-item.active{
+} */
+.sections > p.active{
     color: #fff !important;
     opacity: 0.7 !important;
     position: relative;
 }
-.event-item.active::after{
+.sections > p.active::after{
     content: '';
     position: absolute;
-    width: 25%;
+    width: 35%;
     height: 0.8rem;
     margin-bottom: -1rem;
     background-color: #FF6E6E;
     bottom: 0;
     left: 35%;
 }
+
+.sections > p:hover{
+    color: #fff !important;
+    opacity: 0.7 !important;
+    position: relative;
+}
+
+.sections > p:hover::after{
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 0.8rem;
+    margin-bottom: -1rem;
+    background-color: #FF6E6E;
+    bottom: 0;
+    left: 35%;
+}
+
 /*----------------------- Misc------------------------------- */
 .no-line-break{
     white-space: nowrap;
