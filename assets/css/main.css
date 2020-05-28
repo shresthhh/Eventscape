@@ -29,6 +29,7 @@ body{
     color: #ff7070;
     font-size: 2rem;
 }
+<<<<<<< HEAD
 .nav-item:nth-child(1){
     margin-right: 30px;
 }
@@ -98,6 +99,9 @@ body{
     background-color: #ff7070;
     border-radius: 10px; 
 }
+=======
+
+>>>>>>> 031c84a4ebbd6f942748d8c865167d213c5a8297
 .navigation__button {
     height: 7rem;
     width: 7rem;
@@ -222,6 +226,81 @@ body{
     box-shadow: 0px 0px 5px rgb(255, 110, 110);
     transition: box-shadow linear 500ms;
 }
+/* ----------------------Search Bar----------------------- */
+
+
+
+.search-bar {
+    height: auto;
+    width: auto;
+    transform: translate(-50%, 50%);
+    box-sizing: border-box;
+}
+.search-bar input {
+  height: 44px;
+  width: 44px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 44px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.5s ease-out;
+  padding: 20px 20px;
+  color: #fff !important; 
+}
+.search-bar input::placeholder {
+  color: transparent; 
+}
+.search-bar input:invalid {
+  box-shadow: none; 
+}
+.search-bar input:focus, .search-bar input:valid {
+  width: 250px;
+  border: 2px solid #ff7070;
+  outline: none;
+  cursor: auto;
+  background-color: #191919;
+  color: #000; 
+}
+.search-bar input:focus::placeholder, .search-bar input:valid::placeholder {
+  color: #999; 
+}
+.search-bar input:focus + .search-icon, .search-bar input:valid + .search-icon {
+  z-index: 0;
+  border-color: #ff7070;
+  right: 20px; 
+}
+.search-bar input:focus + .search-icon:after, .search-bar input:valid + .search-icon:after {
+  background-color: #ff7070; 
+}
+.search-icon { 
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #ff7070;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  z-index: -1; 
+}
+.search-icon:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 13px;
+    transform: rotate(45deg);
+    height: 2px;
+    width: 10px;
+    background-color: #ff7070;
+    border-radius: 10px; 
+}
+
+
+
+
 /* -----------------------Carousel------------------------ */
 
 .carousel{

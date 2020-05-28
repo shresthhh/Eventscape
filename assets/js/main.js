@@ -53,7 +53,7 @@ menuBtn.addEventListener('click', () => {
 
 
 //----------------Sections Toggler-------------------
-$('.upcoming-events').on('click', function(){
+$('#upcoming-events').on('click', function(){
     $('#upcoming').show();
     $('#technical').hide();
     $('#non-technical').hide();
@@ -63,7 +63,7 @@ $('.upcoming-events').on('click', function(){
     $('.non-technical-events').removeClass('active');
 });
 
-$('.technical-events').on('click', function(){
+$('#technical-events').on('click', function(){
     $('#upcoming').hide();
     $('#technical').show();
     $('#non-technical').hide();
@@ -73,7 +73,7 @@ $('.technical-events').on('click', function(){
     $('.non-technical-events').removeClass('active');
 });
 
-$('.non-technical-events').on('click', function(){
+$('#non-technical-events').on('click', function(){
     $('#upcoming').hide();
     $('#technical').hide();
     $('#non-technical').show();
