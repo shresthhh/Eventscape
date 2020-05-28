@@ -29,10 +29,12 @@ body{
     color: #ff7070;
     font-size: 2rem;
 }
+.nav-item:nth-child(1){
+    margin-right: 30px;
+}
 .search-bar {
     height: auto;
     width: auto;
-    transform: translate(-50%, 50%);
     box-sizing: border-box;
 }
 .search-bar input {
@@ -69,7 +71,7 @@ body{
 .search-bar input:focus + .search-icon, .search-bar input:valid + .search-icon {
   z-index: 0;
   border-color: #ff7070;
-  right: 20px; 
+  right: 150px; 
 }
 .search-bar input:focus + .search-icon:after, .search-bar input:valid + .search-icon:after {
   background-color: #ff7070; 
@@ -81,8 +83,8 @@ body{
   border-radius: 50%;
   border: 2px solid #ff7070;
   position: absolute;
-  right: 20px;
-  top: 8px;
+  right: 150px;
+  top: 20px;
   z-index: -1; 
 }
 .search-icon:after {
