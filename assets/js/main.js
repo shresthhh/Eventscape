@@ -51,6 +51,42 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
+<<<<<<< HEAD
+=======
+
+//----------------Sections Toggler-------------------
+$('#upcoming-events').on('click', function(){
+    $('#upcoming').show();
+    $('#technical').hide();
+    $('#non-technical').hide();
+
+    $(this).addClass('active');
+    $('.technical-events').removeClass('active');
+    $('.non-technical-events').removeClass('active');
+});
+
+$('#technical-events').on('click', function(){
+    $('#upcoming').hide();
+    $('#technical').show();
+    $('#non-technical').hide();
+
+    $(this).addClass('active');
+    $('.upcoming-events').removeClass('active');
+    $('.non-technical-events').removeClass('active');
+});
+
+$('#non-technical-events').on('click', function(){
+    $('#upcoming').hide();
+    $('#technical').hide();
+    $('#non-technical').show();
+
+    $(this).addClass('active');
+    $('.technical-events').removeClass('active');
+    $('.upcoming-events').removeClass('active');
+});
+
+//---------------------------------------------------
+>>>>>>> 0221c613fc2d4e44981cf7332b8a56e7ae954df2
 timeout = null;
 function typeWriter(target, textList, placeholder = false, i = 0, textList_i = 0, delay = 250) {
     if (!i) {
