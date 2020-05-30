@@ -62,7 +62,7 @@ body{
   border: 2px solid #ff7070;
   outline: none;
   cursor: auto;
-  background-color: #191919;
+  background-color: transparent;
   color: #000; 
 }
 .search-bar input:focus::placeholder, .search-bar input:valid::placeholder {
