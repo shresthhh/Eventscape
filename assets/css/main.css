@@ -17,8 +17,13 @@ body{
     z-index: 100;
     width: 100%;
     height: 70px;
-    background-color: #000;
+    background-color: #201F1F;
 }
+
+ion-icon{
+    margin-bottom: -.3rem;
+}
+
 .navbar-right{
     float: right;
     margin-top: 15px;
