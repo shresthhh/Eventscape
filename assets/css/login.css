@@ -288,3 +288,21 @@ ion-icon{
     outline: none;
     border-color: #3b3f3c ;
 }
+
+.form-direction{
+    margin-top: 4rem;
+    color: white
+    
+}
+.form-direction a{
+    color: #FF7070;
+    cursor: pointer;
+    
+}
+.form-direction a:hover{
+    color: #FF7070;  
+}
+
+.hide{
+    display: none;
+}
