@@ -61,3 +61,21 @@ $("#form-direct--signup").on('click', (e) =>{
     $(".form_signup").addClass("hide");
     $(".form_login").removeClass("hide");
 });
+
+$("#non-technical-events").on('click', (e)=>{
+  $("#upcoming").addClass("hide");
+  $("#technical").addClass("hide");
+  $("#non-technical").removeClass("hide");
+});
+
+$("#technical-events").on('click', (e)=>{
+  $("#upcoming").addClass("hide");
+  $("#non-technical").addClass("hide");
+  $("#technical").removeClass("hide");
+});
+
+$("#upcoming-events").on('click', (e)=>{
+  $("#non-technical").addClass("hide");
+  $("#technical").addClass("hide");
+  $("#upcoming").removeClass("hide");
+});
